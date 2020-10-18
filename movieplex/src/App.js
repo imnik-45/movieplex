@@ -12,6 +12,7 @@ const search_api =
 
 function App() {
   const [movies, setMovies] = useState([]);
+  const [searchTerm,setSearchTerm] = useState('');
 
   useEffect(() => {
     fetch(featured_api)
@@ -22,7 +23,42 @@ function App() {
       });
   }, []);
 
-  return <div className="movie-container">{movies.length > 0 && movies.map((movie) => <Movie key={movie.id} {...movie} />)}</div>;
+  const handleOnSubmit = (e) =>{
+    e.preventDefault();
+
+    if(searchTerm){
+      fetch(search_api+searchTerm)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setMovies(data.results);
+      });
+      setSearchTerm('');  
+    }
+   
+  }
+
+  const handleOnChange = (e) =>{
+   setSearchTerm(e.target.value);
+  }
+
+
+
+  return (
+    <>
+    <a href="index.html" className="head"><center > <h2>Movieplex</h2></center></a>
+      <header>
+        
+        <form onSubmit={handleOnSubmit}>
+          <input className="search" type="search" placeholder="search..." value={searchTerm} onChange={handleOnChange} />
+        </form>
+      </header>
+      <div className="movie-container">
+        {movies.length > 0 &&
+          movies.map((movie) => <Movie key={movie.id} {...movie} />)}
+      </div>
+    </>
+  );
 }
 
 export default App;

@@ -5,8 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #22254b;
+  background-color: #40436b;
   ;
+}
+
+.root{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.head{
+  text-decoration: none;
+  color: white;
+}
+header{
+  background-color: #22254b;
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+
+
+.search{
+  
+  background-color: transparent;
+  border: 2px solid #4750cc;
+  border-radius: 50px;
+  color:white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.search:focus {
+  outline:none;
 }
 
 code {
@@ -16,12 +50,14 @@ code {
 
 .movie-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .movie {
   background-color: #22254b;
   border-radius: 3px;
+  color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
@@ -30,6 +66,8 @@ code {
 }
 
 .movie img {
+  object-fit: cover;
+  height: 450px;
   max-width: 100%;
 }
 
@@ -62,4 +100,21 @@ code {
 
 .movie:hover .movie-over {
   transform: translateY(0);
+}
+
+.tag{
+  background-color:whitesmoke;
+  border-radius:5px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.tag.green{
+  color: green;
+}
+.tag.orange{
+  color: peru;
+}
+.tag.red{
+  color:red;
 }
