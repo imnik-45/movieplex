@@ -1,6 +1,27 @@
-# movieplex
+# Movieplex
 
-- Movie App in React
+- Movie App in React.
+
+## Snapshots
+<hr>
+<br>
+
+![Screenshot_2020-10-18 Movieplex](https://user-images.githubusercontent.com/51753810/96371936-0ad3b780-1182-11eb-8ca7-a85eecff0e7e.jpg)
+<hr>
+<br>
+
+- seacrching for a particular movie.
+
+![Screenshot_2020-10-18 Movieplex(2)](https://user-images.githubusercontent.com/51753810/96371973-39ea2900-1182-11eb-9cca-588920a98371.jpg)
+<hr>
+<br>
+
+
+![Screenshot_2020-10-18 Movieplex(1)](https://user-images.githubusercontent.com/51753810/96371955-263ec280-1182-11eb-9170-e987bbe21531.jpg)
+<hr>
+<br>
+
+
 
 ## React
 
@@ -9,6 +30,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+To install all dependencies for the movieplex.
 
 ### `npm start`
 
