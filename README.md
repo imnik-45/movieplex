@@ -17,10 +17,6 @@
 <br>
 
 
-![Screenshot_2020-10-18 Movieplex(1)](https://user-images.githubusercontent.com/51753810/96371955-263ec280-1182-11eb-9170-e987bbe21531.jpg)
-<hr>
-<br>
-
 - showing movie information
 
 ![Screenshot (142)](https://user-images.githubusercontent.com/51753810/96371931-f7c0e780-1181-11eb-8e65-c9028d74016e.png)
